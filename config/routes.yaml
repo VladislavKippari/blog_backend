@@ -1,3 +1,21 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+
+new_user:
+  path: /api/new-user
+  controller: App\Controller\UserController::newUser
+ 
+userList:
+  path: /api/user-list
+  controller: App\Controller\UserController::userList
+  
+postsList:
+  path: /api/posts-list
+  controller: App\Controller\PostController::postsList
+  
+userLogin:
+  path: /api/user-login
+  controller: App\Controller\UserController::userLogin
+
+newPost:
+  path: /api/new-post
+  controller: App\Controller\PostController::newPost
+       
